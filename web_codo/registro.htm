@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<html>
+	
+<head>
+        <meta http-equiv="Page-Enter" content="blendTrans(Duration=2)">
+        <title>Registro</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+		<script src="https://kit.fontawesome.com/10777c7fd2.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="main.css">
+		<script src="formulario.js"></script>
+</head>
+
+<body>
+	<header class="title">
+		<h3><i class="fa-regular fa-envelope"></i> Regi<span>str</span>arse</h3>
+	</header>
+	<div class="contenedor">
+		<div class="registro" align="center">
+			<form name="form1" method="POST" action="">
+				<table border="0" cellpadding="0" cellspacing="0" width="400">
+					<tr>
+						<td width="50%">Ingresar usuario: (*)</td>
+						<td width="50%"><input type="text" name="usuario" id="usuario" value=""></td>
+					</tr>
+					<tr>
+						<td width="50%">Ingresar nombre: (*)</td>
+						<td><input type="text" name="nombre" id="nombre" value=""></td>
+					</tr>
+					<tr>
+						<td width="50%">Ingresar apellido: (*)</td>
+						<td><input type="text" name="apellido" id="apellido" value=""></td>
+					</tr>
+					<tr>
+						<td width="50%">Correo electronico:</td>
+						<td width="50%"><input type="text" name="email" id="email" value=""></td>
+					</tr>
+					<tr>
+						<td width="50%">Ingresar password: (*)</td>
+						<td width="50%"><input type="password" name="clave1" id="clave1" value=""></td>
+					</tr>
+					<tr>
+						<td width="50%">Repetir password: (*)</td>
+						<td width="50%"><input type="password" name="clave2" id="clave2" value=""></td>
+					</tr>
+					<tr>
+						<td width="50%" align="left" valign="top">Seleccionar las preferencias: (*)</td>
+						<td width="50%">
+						<input type="checkbox" name="hobby" value="peliculas">Películas&nbsp;
+						<input type="checkbox" name="hobby" value="series">Series<br>
+						<input type="checkbox" name="hobby" value="trailers">Trailers&nbsp;
+						<input type="checkbox" name="hobby" value="novedades">Novedades<br>
+						<input type="checkbox" name="hobby" value="Actores">Actores&nbsp;
+						<input type="checkbox" name="hobby" value="Premios">Premios<br>
+						</td>
+					</tr>
+					<tr>
+						<td width="50%">Pais: (*)</td>
+						<td width="50%">
+						<select name="pais" id="pais">
+							<option value="">--</option>
+							<option value="argentina">Argentina</option>
+							<option value="brasil">Brasil</option>
+							<option value="chile">Chile</option>
+							<option value="colombia">Colombia</option>
+							<option value="ecuador">Ecuador</option>
+						</select>
+						</td>
+					</tr>
+					<tr>
+						<td width="50%">Sexo:</td>
+						<td width="50%">
+						<input type="radio" name="sexo" value="m">M&nbsp;
+						<input type="radio" name="sexo" value="f">F&nbsp;
+						<input type="radio" name="sexo" value="n">N&nbsp;
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<br>
+						</td>
+					</tr>
+					<tr>
+						<td width="50%" align="center">
+							<button type="button" name="boton" onClick="Subir()">Crear usuario</button>
+						</td>
+						<td width="50%" align="center">
+							<button type="reset" name="botonR">Cancelar</button>
+						</td>
+					</tr>
+				</table>
+			<br>
+			Los campos con asteriscos (*) son obligatorios.
+
+			</form>
+		</div>
+		<div class="banner" style="background-image: url('./img/banner3.jpg')">
+			<ul>
+				<li></li>
+			</ul>
+			<button class="boton"><i class="fa-solid fa-house-chimney"></i><a href="index.html">  INICIO</a></button>
+		</div>
+	</div>
+</body>
+</html>
